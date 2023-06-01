@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test Ajax JQuery 1</title>
+<script language="javascript" src="jquery.min.js"></script>
+<script language="javascript">
+$(document).ready(function(e) {
+    //lập trình sử kiện keyup chung cho cả 2 input
+	$("input").keyup(function(e) {
+        ht = $("#hoten").val();//lấy giá trị của input hoten
+		n = $("#solan").val();
+		n = (n!="")? n : 1;//nếu n bằng rỗng thì n =1
+		//tạo đường link vói các biến hoten và solan
+		url = "Test.php?hoten=" + ht + "&solan=" + n;
+		//gửi yêu cầu tới trang Test.php và nhận kết quả hiển thị vào id=Ketqua
+		$("#Ketqua").load(url); 
+    });
+});
+</script>
+</head>
+
+<body>
+<form name="f1" id="f1">
+	Họ tên: <input type="text" name="hoten" id="hoten">
+    Số lần: <input type="text" name="solan" id="solan" size="10">
+</form>
+<h3> HIỂN THỊ KẾT QUẢ TỪ TRANG TEST.PHP</h3>
+<div id="Ketqua" style="width:300px;height:200px;border:1px red solid;overflow:auto">
+</div>
+</body>
+</html>

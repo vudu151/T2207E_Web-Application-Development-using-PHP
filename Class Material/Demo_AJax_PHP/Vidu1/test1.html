@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo AJAX - JQuery 1</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(
+            function(e){
+                //sự kiện nhả phím trên các thẻ có tên input
+               $("input").keyup(
+                   function(e)
+                   {
+                    ht = $("#tHoten").val();
+                    n = $("#tSolan").val();
+                    if(n=="" || isNaN(n))
+                        n=1;
+                    //url = "Test.php?hoten=" + ht + "&solan=" +n;
+                    url = "Test.php"
+                    $("#ketqua").load(url, {hoten:ht,solan:n}); 
+                   }
+               );
+            }
+        );
+    </script>
+</head>
+<body>
+    <h1>Demo AJAX - JQuery</h1>
+    <form name="f1" id="f1">
+        Họ tên: <input type="text" name="tHoten" id="tHoten">
+        Số lần: <input type="text" name="tSolan" id="tSolan" value="1">
+    </form>
+    <h2>Hiển thị kết quả từ trang Test.php</h2>
+    <div id="ketqua" style="width: 200px; height: 100px; overflow: auto; border: 1px red solid;">
+
+    </div>
+</body>
+</html>

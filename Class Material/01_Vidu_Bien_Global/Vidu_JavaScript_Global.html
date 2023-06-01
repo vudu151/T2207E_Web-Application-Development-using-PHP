@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biếm toàn cục - javascript</title>
+    <script>
+    function Func1()
+    {
+        x = 20;// là biến toàn cục đã khai báo trước khi gọi hàm
+        document.write("<p> trong Func1: x=" + x + "</p>");
+    }
+    </script>
+</head>
+<body>
+    <h2> Ví dụ sử dụng biến toàn cục Javascript</h2>
+    <script>
+    x = 10; //x là biến toàn cục (global)
+    Func1();
+    document.write("<p> sau khi gọi Func1: x=" + x + "</p>");
+    </script>
+</body>
+</html>

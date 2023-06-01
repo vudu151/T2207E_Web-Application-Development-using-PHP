@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+#right_detail {width:800px; height:auto; margin:0px; overflow:auto; 
+			padding:0px 10px}
+.Content_Table {margin:5px auto; border:1px #CCCCCC solid; border-collapse:collapse;}
+.Content_Table tr {height:30px}
+.Content_Table tr:first-child {background:#666; color:white; font-weight:bold; text-align:center}
+.Content_Table td {padding:5px}
+.Content_Table a{ color:#333; text-decoration:none}
+.Content_Table a:hover {color:red; text-decoration:underline}
+
+#Right_Search { width:780px; height:40px; margin:5px; padding-top:10px}
+#Right_Search span {margin:10px;}
+#Right_Search input[type=text] { width:200px; height:20px; 
+							border-radius:10px; padding-left:10px;padding-right:10px}
+#Right_Search input[type=text]:focus {outline:none; background:#666; color:#FFF}
+#Right_Search select {width:150px; height:20px;}
+#Right_Search input[type=submit] {width:80px; height:20px; 
+								border-radius:10px;margin-left:10px;}

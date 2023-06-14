@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Biến toàn cục JavaScript</title>
+        <script>
+            function Func_1()
+            {
+                x=20;    //x là biến toàn cục đã khai báo trước khi gọi hàm
+                document.write("<p>Trong Func_1: x = " + x + "</p>");
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Sử dụng biến toàn cục JavaScript</h2>
+        <script>
+            x=10;   //x là biến toàn cục (global)
+            document.write("<p>Trước Func_1: x = " + x + "</p>");
+            Func_1();
+            document.write("<p>Sau Func_1: x = " + x + "</p>");
+        </script>
+    </body>
+</html>

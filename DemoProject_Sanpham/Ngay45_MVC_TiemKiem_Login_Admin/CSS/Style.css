@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+/*style chung cho mọi thẻ*/
+* {margin:0px; padding:0px; box-sizing:border-box; 
+	font-family:Tahoma, Geneva, sans-serif; font-size:12px}
+.clear_fix {overflow:auto; zoom:1} 
+/*áp dụng cho các thẻ div cha có chiều cao tự động co giãn ngay cả khi thẻ div con sử dụng float*/
+	
+#wrapper { width:1000px; margin:0px auto; /*border:1px red solid;*/ box-sizing:content-box}
+/*box-sizing:content-box để cho width của wrapper đúng 1000px, độ rộng border được cộng ra bên ngoài*/
+
+#header {width:100%; height:180px; 
+		background-image:url(../images/banner-01.jpg); background-repeat:no-repeat;
+		background-position:center; background-size:cover}
+#menu {width:100%; height:30px; background-color:#666}
+
+#content {width:100%; /*background-color:#CCC;*/} /*chiều cao để tự động co dãn theo nội dung*/
+
+#content_left {width:200px; /*background-color:#3CC;*/ float:left}
+#content_center { width:600px; /*background-color:#FFC;*/ float:left}
+#content_center_2 { width:800px; /*background-color:#FFC;*/ float:left} /*không có content_right*/
+#content_right {width:200px; /*background:#0C6;*/ float:left}
+
+#content h1 {width:auto; color:#666; text-align:left; padding:10px; margin:5px;
+			background:#FC0;border-radius:10px}
+#content_center h2{color:red; text-align:left; padding:10px; margin:5px;}
+#content_center h3 {color:red; text-align:left; padding:10px; margin:5px;}
+#content_center>a { color:green; text-decoration:none;}			
+#content_center_2 h2 {color:red; text-align:left; padding:10px; margin:5px;}
+#content_center_2 h3 {color:red; text-align:left; padding:10px; margin:5px;}
+#content_center_2>a { color:green; text-decoration:none;}
+
+#footer {width:100%; height:80px; background:#999; color:white; 
+		font-weight:bold; line-height:20px; padding-left:10px;
+		padding-top:10px; clear:both;}
+/* clear:both để footer luôn nằm dưới các thẻ div bên trên có float:left/right*/
+
+.left1 {width:200px; border:1px #999999 solid; border-radius:10px; 
+		margin:15px 0px; padding:15px;}
+.left1 h3{margin-bottom:10px;}
+.left1 p {margin:5px 0px}
+.left1 a {text-decoration:none; color:#333}
+.left1 a.active {color:red; font-weight:bold}
+.left1 input,select {width:160px}
+
+.right1 {width:200px; border:1px #999999 solid; border-radius:10px; 
+		margin:15px 0px; padding:0px;}
+.right1 h3{margin-bottom:10px; text-align:center; color:white;
+	 background:#999; padding:5px; border-radius:10px 10px 0px 0px}
+.right1 p {margin:5px 0px; text-align:center}
+.right1 a {text-decoration:none; color:#333}
+.right1 img { width:100px}
+
+
+
+

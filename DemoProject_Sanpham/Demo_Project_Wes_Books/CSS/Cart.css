@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+/*tạo style cho thẻ có id=content_sp*/
+#content_cart {width:100%; height:auto; margin:10px auto; overflow:auto}
+/*thanh tiêu đề sản phẩm giỏ hàng*/
+.cart_item_title {width:780px; height:40px; background:#CCC; margin:0px auto;
+				display: flex;flex-direction: row;align-items: center;
+				font-weight:bold;}
+.cart_item_title span { color:#666; display:block; height:100%; padding-top:10px; 
+						vertical-align:middle; text-align:center;
+						border:1px #999999 solid;}
+.cart_item_title span:nth-child(1) {width:150px;  }
+.cart_item_title span:nth-child(2) {width:280px; }
+.cart_item_title span:nth-child(3) {width:100px; }
+.cart_item_title span:nth-child(4) {width:100px; }
+.cart_item_title span:nth-child(5) {width:100px; }
+.cart_item_title span:nth-child(6) {width:50px; }			
+/*các sản phẩm trong giỏ hàng*/
+.cart_item	{width:780px; height: 120px; margin:0px auto;
+				display: flex;flex-direction: row;align-items: center;}
+.cart_item span { color:#666; display:block; height:100%; padding-top:20px; 
+						vertical-align:middle; text-align:center;
+						border:1px #999999 solid;}
+.cart_item span:nth-child(1) {width:150px;padding-top:5px  }
+.cart_item span:nth-child(2) {width:280px;text-align:left}
+.cart_item span:nth-child(3) {width:100px; }
+.cart_item span:nth-child(4) {width:100px; }
+.cart_item span:nth-child(5) {width:100px; }
+.cart_item span:nth-child(6) {width:50px; }
+
+.cart_item span:nth-child(4) input{width:50px; }
+.cart_item span:nth-child(6)>a{ text-decoration:none; font-weight:bold; color:red;}
+
+.cart_item img { max-width:140px; max-height:110px; vertical-align:middle;}
+.cart_item_name { font-weight: bold; margin-bottom:15px}
+.cart_item_name a{font-size:14px; color:#090; text-decoration:none;}
+.cart_item_name a:hover {text-decoration:underline; color:#f90;}
+.cart_item_author {font-size:12px; color:#F90}
+/*tổng tiền*/
+.cart_total {width:780px; margin:10px;color:red; font-weight:bold; font-size:16px; text-align:right}
+.cart_update {width:780px; margin:10px; text-align:right}
+.cart_update input[type=submit] {width:250px; height:50px; 
+					background:#0C0; border:none; color:white; font-weight:bold; font-size:14px}
+.cart_update input[type=submit]:hover { cursor:pointer}
+
+#cart_checkout {width:70%; height:auto; margin:10px auto;}
+#cart_checkout p {height:30px}
+#cart_checkout span {display:inline-block; width:100px;}
+#cart_checkout input[type=text] {width:250px}
+#cart_checkout input[type=submit] {width:250px; height:30px; 
+					background:#0C0; border:none; color:white; margin-left:105px}
+
+

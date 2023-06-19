@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+/*tạo style cho thẻ có id=content_sp*/
+#content_sp {width:100%; height:auto; margin:10px auto; overflow:auto}
+/*tạo style chung cho các thẻ có class=sanpham*/
+.sanpham {width:190px; height:300px;float:left; margin:5px;
+			border:1px #FF9900 dashed;  border-radius:10px;}
+.sanpham:hover {border:2px red dashed}
+.sanpham a {color:green; text-decoration:none; font-size:14px; font-weight:bold}
+.sanpham a:hover { text-decoration:underline; color:#F00} /*khi di qua thẻ a, thì hiện gạch chân và màu đỏ*/
+/*ảnh tự động co dãn đúng tỷ lệ nhưng rộng<=180, cao<=200* và căn giữa dòng (thẻ p) theo chiều đứng*/
+.sanpham img{max-width:180px; max-height:190px; vertical-align:middle;}
+.sanpham p:nth-child(1) { text-align:center;margin:10px;}
+.sanpham p:nth-child(2) { line-height:190px; text-align:center; margin:0px}/*text-align:center để ảnh căn giữa theo chiều ngang*/
+.sanpham p:nth-child(3) { color:red; text-align:center; margin:10px}
+.sanpham p:nth-child(4) { color:red; font-weight:bold; text-align:center; 
+							margin:10px}	
+.sanpham i { font-size:20px; color:#F90}			
+
+.tomtatsanpham {width:590px; height:300px;float:left; margin:5px;
+			border:1px #FF9900 dashed;  border-radius:10px;}
+.tomtatsanpham h3 {padding:10px; color:#F00;}			
+.tomtatsanpham h2 { margin:10px;background:#999; padding:10px;border-radius:10px; color:#FFF}
+.tomtatsanpham p { margin-bottom:10px; padding-left:10px;}		
+.tomtatsanpham i { font-size:20px; color:#F90}
+.tomtatsanpham a {color:green; text-decoration:none; font-size:14px; font-weight:bold}
+.noidung_tomtat { height:170px;overflow:auto;}
+
+.chitietsanpham	{width:100%; clear:both }
+.chitietsanpham h2 { margin:10px; background:#999; padding:10px;border-radius:10px; color:#FFF}
+.chitietsanpham p { margin-bottom:10px; padding-left:10px;}

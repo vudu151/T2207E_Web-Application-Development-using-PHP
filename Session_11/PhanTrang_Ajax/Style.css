@@ -1,0 +1,45 @@
+body{
+    font: 12px verdana;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    background: #fc3;
+}
+#container{
+    width: 800px; 
+    border: 1px red solid;
+    box-sizing: border-box;
+    overflow: auto;
+}
+#left{
+    width: 150px;
+    height: 200px;
+    float: left;
+    border: 1px blue solid;
+}
+#left ul li{
+    margin-top: 10px;
+}
+#right{
+    width: 640px;
+    border: 1px blue solid;
+    float: right;
+}
+a{
+    color: #666666;
+    text-decoration: none;
+    font-weight: 900;
+}
+a.curPage{
+    color: red;
+}
+.pro{
+    border: 1px solid #999999;
+    margin: 5px;
+    padding: 5px;
+    width: 400px;
+}
+

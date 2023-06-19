@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Demo JSON</title>
+        <script>
+            function show(Book_1)
+            {
+                //Tạo chuỗi chứa nội dung sách cần hiển thị
+                var content = "";
+                content += ("ISBN: <b>" + Book_1.isbn + "</b>");
+                content += ("<br>");
+                content += ("Title: " + Book_1.title);
+                content += ("<br>");
+                content += ("Category: " + Book_1.category);
+                content += ("<br>");
+                content += ("Author: " + Book_1.author);
+                content += ("<br>");
+                content += ("Page: " + Book_1.page);
+                content += ("<br>");
+                content += ("Price: " + Book_1.price);
+                
+                //Hiển thị thông tin đối tượng vào div id=demo
+                document.getElementById("demo").innerHTML = content;             
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Phân tích chuỗi JSON từ file JSON trên SERVER</h2>
+        <div id="demo"></div>
+        <script>
+            //Tạo đối tượng Ajax để Request tệp book.json trên máy chủ
+            const xmlhttp = new XMLHttpRequest();
+            xmlhttp.open('GET',"Book_1.json");   //Gửi request đến file Book_1.json tới máy chủ. Khi thành công sẽ chạy function được gán cho .onload
+            xmlhttp.send();
+            xmlhttp.onload = function() 
+            {
+                var Book_1 = JSON.parse(this.responseText);  //responseText là nội dung của Book_1.json
+                show(Book_1);   //Gọi hàm show để hiển thị Book_1 vào thẻ div có id=demo
+            };
+        </script>
+    </body>
+</html>

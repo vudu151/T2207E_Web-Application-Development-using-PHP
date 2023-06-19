@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+/*chỉ áp dụng các thẻ ul con của id=menu*/
+#menu ul { list-style:none; width:70%;  overflow:auto;
+			float:left;} /*list-style:none bỏ biểu tượng dấu chấm*/
+/*chỉ áp dụng các thẻ li con của id=menu*/
+#menu ul li { float:left;  position:relative; height:30px; 
+			padding-top:7px; padding-left:10px; padding-right:10px;}
+#menu ul li a{color:white; text-decoration:none} /*mọi thẻ a trong li*/
+#menu ul li:hover {border:1px red solid; border-radius:10px; background-color:#FFF}
+#menu ul li:hover > a{color:red} /*di qua li, chỉ áp dụng thẻ a trực tiếp thuộc li*/
+/*menu cấp 2*/
+/*phải đăt position:relative cho li bên trên*/
+#menu ul li ul {width:200px; position:absolute; left:0px; top:30px; 
+				border-radius:10px;
+				background:#090; opacity:0.8; visibility:hidden}
+#menu ul li ul li {width:100px}
+#menu ul li:hover ul{visibility:visible}/*khi di qua li trên thì ul dưới hiện ra*/
+
+#menu span { display:inline-block; height:30px;color: #FFF; padding-top:7px}
+.welcome {width:20%; float:left;text-align:right;}
+.logout {width:10%; float:right;text-align:right; padding-right:5px}
+.logout a{color:#FF0; text-decoration:none;}

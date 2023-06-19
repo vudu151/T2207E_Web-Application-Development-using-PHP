@@ -16,7 +16,7 @@
             $passSQL = "";
             try
             {
-                $conn =  new PDO("mysql:host=$servername;dbname=t2207e_dangnhap_csdl_session_4",$userSQL,$passSQL);
+                $conn =  new PDO("mysql:host=$servername;dbname=t22072e_php_s4_csdl_dangnhap",$userSQL,$passSQL);
                 $conn -> query("SET NAMES UTF8");
                 echo "<p>Kết nối thành công</p>";
             }

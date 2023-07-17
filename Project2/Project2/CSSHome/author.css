@@ -1,0 +1,79 @@
+
+.author-card{
+    color: rgb(63, 61, 61);
+    text-align: center;
+    padding: 2rem 0 0 0;
+    /* margin-top: 2rem; */
+}
+.author-card img{
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid gray;
+}
+.author-name{
+    margin-bottom: 14px;
+}
+
+.tac_pham a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* .tac_pham{
+    margin: 4rem 0;
+} */
+
+.mo_ta_tac_pham{
+    color: rgb(63, 61, 61);
+    text-align: center;
+    padding: 2rem 15px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mo_ta_tac_pham:hover{
+    transform: scale(1.05);
+    transition: 500ms;
+}
+
+.inner_div{
+    /* font-size: auto; */
+    border: 1px solid gray;
+    width: 99%;
+    height: 100%;
+    padding: 1rem;
+
+}
+.mo_ta_tac_pham img{
+    width: 80%;
+    margin-bottom: 20px;
+    height: 300px;
+}
+
+
+.book-author{
+    color: gray;
+    font-size: 13px;
+}
+.price{
+    color: red;
+}
+
+.ratingsInAuthor i{
+    
+    color:#cecece;
+    font-size:10px;
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+.review-count{
+    font-weight:400;
+    margin-bottom:2px;
+    font-size:10px !important;
+}

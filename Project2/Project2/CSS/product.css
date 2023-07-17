@@ -1,0 +1,26 @@
+.btn-pimage{
+    color: black; 
+    text-decoration: none; 
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.btn-pimage:hover{
+     color: red;
+}
+
+.ProductSearch{
+    margin: 20px 150px 0 150px;
+}
+
+.title-search{
+    padding-right: 10px;
+}
+
+#keyword{
+    margin-right: 20px;
+}
+
+#categoryid{
+    margin-right: 20px;
+}

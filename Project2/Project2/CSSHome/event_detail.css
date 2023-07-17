@@ -1,0 +1,15 @@
+.event-name{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    border-bottom: 15px solid #e1e1e1;
+}
+
+.e-img{
+    padding: 30px 150px;
+}
+
+.e-img img{
+    width: 100%;
+}

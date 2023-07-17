@@ -1,0 +1,149 @@
+.footer{
+    border-top: 1px solid #e6e6e6;
+    letter-spacing: 0.5px;
+}
+
+.footer a{
+    color: black;
+}
+
+.footer-content{
+    margin: 0 150px 0 150px;
+}
+
+.footer-top{
+    padding-top: 50px;
+    height: 280px;
+}
+.footer ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footer ul li{
+    line-height: 27px;
+    font-size: 14px;
+}
+
+.footer .tittle{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.footer-service{
+    float: left;
+    width: 25%;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-support{
+    float: left;
+    width: 25%;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-group3{
+    float: left;
+    width: 25%;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-connect{
+    float: left;
+    width: 25%;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+.footer-bottom{
+    padding-top: 30px;
+}
+
+.footer-youremail{
+    float: right;
+    width: 50%;
+    padding-right: 30px;
+}
+
+.footer-input-email{
+    height: 200px;
+    padding-top: 45px;
+    width: 50%;
+    margin-left: 0px;
+}
+
+.footer form{
+    height: 30px;
+}
+
+.footer-mxh .fa-brands{
+    font-size: 25px;
+}
+
+.input-email{
+    width: 70%;
+    height: 30px;
+    border: 1px solid rgb(196, 189, 189);
+    padding: 0px;
+    padding-left: 15px;
+    outline: 0;
+}
+
+.btn-input-email{
+    padding: 0px;
+    border: 0px;
+    height: 30px;
+    width: 20%;
+    background-color: #a9171d;
+    color: white;
+}
+
+@media all and (max-width: 1000px){
+    .footer-top{
+        height: auto;
+    }
+
+    .footer-service{
+        float: none;
+        width: 100%;
+        zoom: 150%;
+        height: auto;
+    }
+    
+    .footer-support{
+        float: none;
+        width: 100%;
+        zoom: 150%;
+        height: auto;
+    }
+    
+    .footer-group3{
+        float: none;
+        width: 100%;
+        zoom: 150%;
+        height: auto;
+    }
+    
+    .footer-connect{
+        float: none;
+        width: 100%;
+        zoom: 150%;
+        height: auto;
+    }
+
+    .footer-youremail{
+        float: none;
+        width: 100%;
+        zoom: 150%;
+    }
+
+    .footer-input-email{
+        width: 100%;
+        zoom: 150%;
+    }
+}

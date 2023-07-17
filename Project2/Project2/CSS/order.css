@@ -1,0 +1,26 @@
+.order-detail-content{
+    padding: 0 150px;
+}
+
+.order-detail-content p{
+    font-size: 16px;
+}
+.order-detail-content p b{
+    font-size: 16px;
+}
+
+/* Paging */
+
+.pager a{
+    color:#000000;
+    text-decoration:none;
+    font-weight:900;
+}
+
+a.curPage {
+    color:red;
+}
+
+a.OffButton {
+    color: #00000050;
+}

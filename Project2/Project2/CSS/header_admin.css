@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.header{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+ 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color:#000000; 
+    text-decoration:none;   
+}
+
+.htop{
+    float: left;
+}
+
+/* Header Top */
+.header-top{
+    background-color:#a9171d;
+    height: 30px;
+}
+
+.header-top-content{
+    font-weight: 300;
+    padding: 2px;
+    color: white;
+    padding-top: 5px;
+    margin: 0 150px 0 150px;
+}
+
+.fa-brands{
+    padding-left: 10px;
+}
+.fa-solid{
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.social-network{
+    width: 20%;
+}
+
+.notification{
+    height: 21px;
+    width: 40%;
+}
+
+.text-run{
+    width: 90%;
+    margin-left: 10px;
+}
+
+.contact-info{
+    width: 40%;
+}
+
+.contact-info span{
+    float: right;
+}
+
+/* Header Bottom */
+
+.header-bottom{
+    height: 111px;
+    padding: 10px 0 10px 0;
+}
+
+.header-bottom-content{
+    margin: 0 150px 0 150px;
+}
+
+.logo{
+    width: 14%;
+}
+
+.logo img{
+    width: 130px;
+    height: 91px;
+}
+
+.list{
+    width: 66%;
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+
+.list-text{
+    font-size: 18px;
+    padding-right: 10px;
+    font-weight: 900;
+    color: #a9171d;
+}
+
+.list-text:hover{
+    color: black;
+}
+
+.header .list ul { list-style:none;} /*list-style:none bỏ biểu tượng dấu chấm*/
+/*chỉ áp dụng các thẻ li con của id=menu*/
+.header .list ul li { float:left;  position:relative; height:30px;}
+.header .list ul li a{color:black; text-decoration:none;} /*mọi thẻ a trong li*/
+.header .list ul li:hover > a{color: #a9171d} /*di qua li, chỉ áp dụng thẻ a trực tiếp thuộc li*/
+/*menu cấp 2*/
+/*phải đăt position:relative cho li bên trên*/
+.header .list ul li ul {width:185px; position:absolute; box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.493);
+				 opacity:0.9; visibility:hidden; padding: 0; background-color: white; z-index: 100;}
+.header .list ul li ul li .img-book{padding-right: 10px;}
+.header .list ul li ul li {width:185px; height: 30px; border-bottom: 1px solid rgb(196, 189, 189);
+                text-align: left; padding-left: 15px; padding-top: 5px;}
+.header .list ul li:hover ul{visibility:visible}/*khi di qua li trên thì ul dưới hiện ra*/
+
+.icon-search i{
+    width: 26px;
+    color: #a9171d;
+    height: 26px;
+    padding: 5px;
+}
+
+.button-search{
+    border: 0;
+    background-color: rgb(196, 189, 189);
+    padding: 0;
+    height: 26px;
+}
+
+.user-info{
+    width: 20%;
+    padding: 30px 0 30px 0;
+    text-align: right;
+}
+
+.cart{
+    width: 3%;
+    padding: 30px 0 30px 0;
+}
+
+.cart .cart-icon a{
+    float: right;
+    padding-right: 0;
+}
+
+.header-bottom-content a{
+    padding-right: 10px;
+    color:#a9171d;
+}
+
+.user-info-text{
+    color:black;
+}
+
+.header-bottom-content a:hover{
+    color:black;
+}
+
+.cart .cart-icon .fa-solid{
+    font-size: 25px;
+    position: relative;
+    top: -7px;
+}
+
+.cart .cart-number .header-number{
+    box-sizing:content-box;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    color: white;
+    background-color: #a9171d;
+    border-radius: 50%;
+    position: relative;
+    right: -25px;
+    top: -45px;
+    border: 2px solid;
+    border-color: white;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+@media all and (max-width: 1000px) {
+    .header-bottom-content{
+        margin: 0 100px;
+    }
+
+    body{
+        zoom: 75%;
+    }
+
+    .header-top-content{
+        margin: 0 100px;
+    }
+
+    .notification{
+        display: none;
+    }
+
+    .contact-info{
+        width: 80%;
+    }
+
+    .logo{
+        width: 60%;
+    }
+
+    .list{
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .user-info{
+        width: 20%;
+    }
+
+    .user-info .fa-solid{
+        font-size: 25px;
+    }
+
+    .user-info-text{
+        display: none;
+    }
+
+    .cart{
+        width: 10%;
+    }
+
+    .cart .cart-icon .fa-solid{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .cart .cart-number .header-number{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: unset;
+        width: 10%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .menu-mobile .menu-mobile-icon{
+        text-align: right;
+    }
+
+    .menu-mobile .fa-solid{
+        font-size: 30px;
+        padding: 0px;
+        color: #a9171d;
+    }
+
+    .menu-mobile .fa-solid:hover{
+        color: black;
+    }
+
+    .menu-mobile a{
+        padding-right: 0;
+    }
+
+    .menu-mobile-content{
+        padding-top: 50px;
+        display: none;
+    }
+
+
+    .menu-mobile:hover .menu-mobile-content{
+        display: unset;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: #a9171cc0;
+        width: 300px;
+        height: 100%;
+        z-index: 300;
+    }
+
+    .menu-mobile-content .search-mobile{
+        width: 100%;
+        height: 50px;
+    }
+
+    .menu-mobile:hover .search-mobile .input-search{
+        margin-left: 10px;
+        width: 85%;
+        height: 26px;
+        border: 1px solid rgb(196, 189, 189);
+        padding-left: 15px;
+        outline: 0;
+    }
+    
+    .menu-mobile:hover .search-mobile .icon-search i{
+        font-size: 15px;
+        width: 26px;
+        color: #a9171d;
+        height: 26px;
+        padding: 5px;
+    }
+    
+    .menu-mobile:hover .search-mobile .button-search{
+        border: 0;
+        background-color: rgb(196, 189, 189);
+        padding: 0;
+        height: 26px;
+    }
+
+    .menu-mobile:hover .list{
+        display: unset;
+    }
+
+    .header .list-mobile ul { 
+        list-style:none; 
+        padding-bottom: 20px;
+    }
+    .header .list-mobile .list-text{
+        color: white;
+    }
+    .header .list-mobile a{
+        color: white;
+    }
+}

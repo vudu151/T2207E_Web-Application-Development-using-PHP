@@ -1,0 +1,27 @@
+
+.btn-faqs{
+    text-decoration: none;
+    color: black;
+}
+
+
+.slide1{
+    background-image: url(../images/v_img/slide2.jpg);
+    color: black;
+    text-align: center;
+    padding: 6rem 0;
+    margin-bottom: 3rem;
+}
+
+.faq-collapse{
+    width: 70%;
+    margin: 4rem auto;
+}
+
+.faq-collapse h4{
+    margin: 2rem auto;
+}
+.card-header{
+    border-bottom: none !important;
+    border-top: none !important;
+}

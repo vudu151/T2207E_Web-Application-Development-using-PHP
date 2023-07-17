@@ -1,0 +1,25 @@
+.pager{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+.pager a{
+    text-align: center;
+    color: #939393;
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+a.curPage {
+    background-color: var(--bg-primary-color);;
+    color: white;
+    border-radius: 3px;
+}
+
+a.OffButton {
+    color: #93939350;
+}

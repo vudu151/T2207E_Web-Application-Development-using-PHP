@@ -1,0 +1,10 @@
+.send-email{
+    padding: 20px 150px;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 10px;
+}
+
+.send-email-content{
+    background-color: white;
+    padding: 0 100px 50px 100px;
+}

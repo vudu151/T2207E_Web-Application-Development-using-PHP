@@ -1,0 +1,174 @@
+.banner-product-list{
+    padding: 0 150px;
+    margin-bottom: 20px;
+    background-image: url('../images/BannerP.png');
+    background-size: cover;
+}
+
+.banner-product-list-content{
+    color: white;
+    padding: 50px 0;
+}
+
+/* App-container */
+.grid{
+    background-color: white;
+}
+
+.category{
+    background-color: var(--white-color);
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+.category__heading{
+    background-color:var(--bg-primary-color);
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 16px 16px;
+    margin-top: 0;
+}
+.category-list{
+    padding: 0 0 8px 0;
+    list-style: none;
+}
+.category-item{
+    position: relative;
+}
+.category-item:first-child::before{
+    display: none;
+}
+.category-item::before{
+    content: "";
+    border-top: 1px solid #e1e1e1;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+}
+.category-item--active .category-item__link{
+    color: var(--primary-color);
+}
+.category-item__link{
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: block;
+    padding: 6px 20px;
+}
+.category-item__link:hover{
+    color: var(--primary-color);
+}
+
+.category-item__link img{
+    margin-right: 10px;
+}
+
+
+
+/* Event item */
+.home-event{
+    margin-bottom: 10px;
+}
+.grid__column
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+}
+.home-event-item{
+    display: block;
+    text-decoration: none;
+    position: relative;
+    margin: 2px 0 30px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    transition: transform ease-in 0.1s;
+    will-change: transform;
+    height: 530px;
+}
+
+.home-event-item:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.home-event-item__img{
+    padding-top: 75%;
+    /*Làm ảnh hình vuông chỉ cần mỗi thuộc tính như này kết hợp với background-img trực tiếp bên HTML*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.home-event__date-address
+{ 
+    padding: 0 14px 10px;
+    margin-top: -12px;
+}
+
+i.fa{
+    font-weight: bold;
+}
+
+.date-address{
+    font-weight: 400;
+}
+
+.home-event-item__name{
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin: 0 10px ;
+
+    /*Hiển thị chữ chỉ dài 2 dòng , thừa thì thành dấu ...*/
+    line-height: 2rem;
+    height: 4rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;   /*Hướng của dòng chữ ( theo chiều dọc)*/
+    -webkit-line-clamp: 2;          /*xuất hiện dấu ... tại dòng số 2*/
+}
+
+.home-event-item__origin{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10px 0;
+    color: #333333;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    /*Hiển thị chữ chỉ dài 4 dòng , thừa thì thành dấu ...*/
+    line-height: 1.8rem;
+    height: 7.2rem;
+    letter-spacing: 1.6px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;   /*Hướng của dòng chữ ( theo chiều dọc)*/
+    -webkit-line-clamp: 4;  
+}
+
+.home-event-item__origin::after
+{
+    content: "";
+    width: 68%;
+    height: 2px;
+    background: #d51c24;
+    z-index: 9;
+    bottom: 120px;
+    left: 10px;
+    position: absolute;
+}
+
+.home-product__pagination{
+    margin: 48px 0 32px;
+}

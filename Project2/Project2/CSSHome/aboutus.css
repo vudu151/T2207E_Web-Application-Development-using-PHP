@@ -1,0 +1,116 @@
+
+.slide1{
+    background-image: url(../images/v_img/slide1.jpg);
+    color: rgb(12, 12, 12);
+    /* font-weight: 800;
+    font-size: 3rem; */
+    text-align: center;
+    padding: 6rem 0;
+}
+
+
+.container {
+    padding: 30px 0;
+}
+
+.ft img{
+    text-align: center;
+}
+.ft{
+    text-align: center;
+}
+
+
+
+/* .about-text p{
+    position: relative;
+    overflow: hidden;
+    display: block;
+} */
+.about-text{
+    
+    align-items: center;
+    display: flex;
+}
+.about-pic{ 
+ background-size: 100%;
+ background-repeat: no-repeat;
+}
+.about-pic img{
+    width: 100%;
+    border-radius: 0.5rem;  
+}
+
+.about-title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mission-pic{
+    background-image: url(pic2-mission.jpg);
+}
+.other-pic{
+    background-image: url(pic3.jpg);
+}
+
+.service-title{
+    margin: 0 8rem 3rem;
+}
+.service img{
+    float: right;
+}
+/* .service .col-md-4{
+    box-sizing: border-box;
+    padding: 0 1rem;
+} */
+
+.about-us-box{
+    padding: 20px 18px;
+    border: solid 1px rgb(175, 163, 163);
+}
+.about-us-box p{
+    color: #2e2e2e;
+}
+
+
+
+.author-div-title{
+    margin: 2rem 0;
+    text-align: center;
+
+}
+
+.author-card{
+    text-align: center;
+}
+
+.author-card:hover{
+    transform: scale(1.05);
+    transition: 500ms;
+}
+
+.author-card a{
+    color: gray;
+    text-decoration: none;
+}
+.author-card img{
+    width: 70%;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 2px solid gray;
+
+}
+.author-list{
+    margin-bottom: 2rem;
+}
+
+.author-name{
+    color: black;
+}
+
+.inner_div{
+    width: 99%;
+    height: 100%;
+    padding: 1rem;
+
+}
